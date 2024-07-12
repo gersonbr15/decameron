@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d9cb6ff9-c6d4-4786-a002-e07a8f5cece2",
+		"name": "decameron",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30654640"
+	},
+	"item": [
+		{
+			"name": "Save Hotels",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"DECAMERON CARTAGENA\",\n    \"address\": \"CALLE 23 58-25\",\n    \"city\": \"CARTAGENA\",\n    \"tax_id\": \"12345678-9\",\n    \"number_of_rooms\": 42,\n    \"rooms\": [\n        { \"quantity\": 35, \"room_type_id\": 1, \"accommodation_id\": 1 },\n        { \"quantity\": 12, \"room_type_id\": 2, \"accommodation_id\": 3 },\n        { \"quantity\": 5, \"room_type_id\": 1, \"accommodation_id\": 2 }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/hotels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
